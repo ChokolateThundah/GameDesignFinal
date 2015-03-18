@@ -10,7 +10,7 @@ public class BaseWarriorClass : BaseCharacterClass {
 
 		//Health Stats
 		ClassHealth = new BaseHealth ();
-		ClassHealth.StatBaseValue = 50;
+		ClassHealth.StatBaseValue = 100;
 		ClassHealth.StatModifiedValue = 0;
 		ClassHealth.StatMaxValue = 100;
 

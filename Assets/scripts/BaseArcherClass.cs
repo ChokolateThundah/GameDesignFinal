@@ -5,12 +5,12 @@ public class BaseArcherClass : BaseCharacterClass {
 
 	// Use this for initialization
 	public BaseArcherClass(){
-		ClassType = ClassTypes.Archer;
+		ClassType = ClassTypes.ARCHER;
 		ClassDescription = "Skilled Ranged Sharpshooter";
 
 		//Health Stats
 		ClassHealth = new BaseHealth ();
-		ClassHealth.StatBaseValue = 50;
+		ClassHealth.StatBaseValue = 100;
 		ClassHealth.StatModifiedValue = 0;
 		ClassHealth.StatMaxValue = 100;
 		

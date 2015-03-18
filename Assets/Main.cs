@@ -36,14 +36,14 @@ public class Main : MonoBehaviour {
 
 	// can be used for healing or damage.
 	public static void ChangeHealth(float amount) {
-		player.health += amount;
+		player.health.StatBaseValue += amount;
 		// do the healthbar effect
 		GameObject healthBar = gameObjects["HealthBar"];
 		Image bar = healthBar.GetComponent<Image>();
-		bar.fillAmount = player.health / player.totalHealth;
+		bar.fillAmount = player.health.StatBaseValue / player.health.StatMaxValue;
 
 		// determine is player should be killed
-		if (player.health <= 0) {
+		if (player.health.StatBaseValue <= 0) {
 			Debug.Log("Played dead.");
 		}
 
@@ -51,11 +51,11 @@ public class Main : MonoBehaviour {
 	}
 
 	public static void ChangeMana(float amount) {
-		player.mana += amount;
+		player.mana.StatBaseValue += amount;
 		// do the healthbar effect
 		GameObject healthBar = gameObjects["ManaBar"];
 		Image bar = healthBar.GetComponent<Image>();
-		bar.fillAmount = player.mana / player.totalMana;
+		bar.fillAmount = player.mana.StatBaseValue / player.mana.StatMaxValue;
 	}
 
 	public static void OnLightCrystalPickup(GameObject lightCrystal) {

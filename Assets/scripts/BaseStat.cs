@@ -5,9 +5,9 @@ public class BaseStat {
 
 	private string name; //name of stat
 	private string description; //short description
-	private double baseValue; //base stat value
-	private double modifiedValue; //modifier ex. certain weps or pots
-	private double maxValue; //max value
+	private float baseValue; //base stat value
+	private float modifiedValue; //modifier ex. certain weps or pots
+	private float maxValue; //max value
 	private StatTypes type; //stat type
 
 	public enum StatTypes{
@@ -33,21 +33,21 @@ public class BaseStat {
 		
 	}
 
-	public double StatBaseValue {
+	public float StatBaseValue {
 		
 		get{ return baseValue; }
 		set{ baseValue = value; }
 		
 	}
 
-	public double StatModifiedValue {
+	public float StatModifiedValue {
 		
 		get{ return modifiedValue; }
 		set{ modifiedValue = value; }
 		
 	}
 
-	public double StatMaxValue {
+	public float StatMaxValue {
 		
 		get{ return maxValue; }
 		set{ maxValue = value; }
