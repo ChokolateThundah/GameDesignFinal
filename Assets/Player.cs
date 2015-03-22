@@ -7,7 +7,7 @@ public class Player : MonoBehaviour {
 
 	/*
 	 * These get instantiated when class is picked
-	 * in GUI main menu. After GUI is set up, work on that.
+	 * in GUI main menu.
 	 * Hold class, skills and attributes
 	 * including health, stamina, defense, etc
 	*/
@@ -18,16 +18,6 @@ public class Player : MonoBehaviour {
 	public BaseMagic magic;
 	public BaseMana mana;
 	public BaseStamina stamina;
-
-	// Use this for initialization
-	void Start () {
-
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 
 
 }
