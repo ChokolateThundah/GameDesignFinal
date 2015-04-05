@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-public class BaseCharacterClass {
+public class BaseCharacterClass : MonoBehaviour {
 
 	private ClassTypes characterClassType;
 	private string characterClassDescription;

@@ -21,14 +21,6 @@ public class Main : MonoBehaviour {
 		if (ply != null) {
 			player = ply;
 			Debug.Log("Found player object: " + ply.name);
-			Debug.Log("Class Type: " + player.playerClass.ClassType);
-			Debug.Log("Class Description: " + player.playerClass.ClassDescription);
-			Debug.Log("Class Health: " + player.health.StatBaseValue);
-			Debug.Log("Class Defense: " + player.defense.StatBaseValue);
-			Debug.Log("Class Attack: " + player.attack.StatBaseValue);
-			Debug.Log("Class Magic: " + player.magic.StatBaseValue);
-			Debug.Log("Class Mana: " + player.mana.StatBaseValue);
-			Debug.Log("Class Stamina: " + player.stamina.StatBaseValue);
 		}
 	}
 

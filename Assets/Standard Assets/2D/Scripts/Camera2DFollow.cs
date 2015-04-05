@@ -5,13 +5,12 @@ namespace UnityStandardAssets._2D
 {
     public class Camera2DFollow : MonoBehaviour
     {
-        
+        public Transform target;
         public float damping = 1;
         public float lookAheadFactor = 3;
         public float lookAheadReturnSpeed = 0.5f;
         public float lookAheadMoveThreshold = 0.1f;
 
-		private Transform target;
         private float m_OffsetZ;
         private Vector3 m_LastTargetPosition;
         private Vector3 m_CurrentVelocity;
@@ -20,8 +19,6 @@ namespace UnityStandardAssets._2D
         // Use this for initialization
         private void Start()
         {
-			GameObject playerObject = GameObject.FindWithTag ("Player");
-			target = playerObject.GetComponent <Transform>();
             m_LastTargetPosition = target.position;
             m_OffsetZ = (transform.position - target.position).z;
             transform.parent = null;
