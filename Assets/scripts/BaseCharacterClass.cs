@@ -57,5 +57,5 @@ public class BaseCharacterClass : MonoBehaviour {
 	public BaseStamina ClassStamina{
 		get{ return stamina; }
 		set{ stamina = value; }
-    }
-}
+	}
+	

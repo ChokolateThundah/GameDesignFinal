@@ -10,7 +10,7 @@ public class BaseMageClass : BaseCharacterClass {
 
 		//Health Stats
 		ClassHealth = new BaseHealth ();
-		ClassHealth.StatBaseValue = 100;
+		ClassHealth.StatBaseValue = 50;
 		ClassHealth.StatModifiedValue = 0;
 		ClassHealth.StatMaxValue = 100;
 		
