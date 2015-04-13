@@ -5,7 +5,7 @@ public class BaseArcherClass : BaseCharacterClass {
 
 	// Use this for initialization
 	public BaseArcherClass(){
-		ClassType = ClassTypes.Archer;
+		ClassType = ClassTypes.ARCHER;
 		ClassDescription = "Skilled Ranged Sharpshooter";
 
 		//Health Stats

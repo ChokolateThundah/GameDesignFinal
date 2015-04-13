@@ -1,0 +1,5 @@
+http://forum.unity3d.com/threads/rotation-animation-issue-with-constant-tangents.213868/
+
+http://answers.unity3d.com/questions/742012/how-can-i-animate-2d-sprite-rotation-without-inter.html
+
+http://docs.unity3d.com/Manual/animeditor-AnimationCurves.html

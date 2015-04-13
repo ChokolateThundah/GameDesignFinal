@@ -58,4 +58,4 @@ public class BaseCharacterClass : MonoBehaviour {
 		get{ return stamina; }
 		set{ stamina = value; }
 	}
-	
+}
